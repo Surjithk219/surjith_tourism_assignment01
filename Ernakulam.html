@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="./css/erna.css">
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* body {
+                background: #111;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            } */
+    
+            svg {
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .tab {
+                max-width: 800%;
+                padding: 0 2em;
+                border-radius: 0.5rem;
+                background-color:#008cff;
+                line-height: 4em;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: auto;
+                transition: all 0.5s linear;
+                box-shadow: 5px 5px 20px violet;
+                height: 70px;
+                margin-top: 10px;
+                
+            }
+    
+            .tab-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-grid;
+                grid-gap: 1em;
+                transition: color 5s ease-in;
+                float: right;
+            }
+    
+            .tab-items> :nth-child(1) {
+                grid-column: 1/2;
+            }
+    
+            .tab-items> :nth-child(2) {
+                grid-column: 2/3;
+            }
+    
+            .tab-items> :nth-child(3) {
+                grid-column: 3/4;
+            }
+    
+            .tab-items> :nth-child(4) {
+                grid-column: 4/5;
+            }
+    
+            .tab-items> :nth-child(5) {
+                grid-column: 5/6;
+            }
+    
+            .tab-item {
+                display: inline;
+                grid-row: 1/2;
+            }
+    
+            .tab-item.active .item-link {
+                color: rgb(74, 167, 167);
+            }
+    
+            .item-link {
+                padding: 0 0.75em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 256ms;
+            }
+    
+            .item-link:hover {
+                color:yellow;
+                /* text-decoration: undelrine; */
+            }
+    
+            .tab-indicator {
+                height: 3px;
+                background-color: yellow;
+                border-radius: 3px 3px 0 0;
+                grid-column: var(--index)/span 1 !important;
+                grid-row: 1/2;
+                align-self: end;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="tab">
+
+
+
+        <!-- <h4>
+    <span>Alappuzha</span>
+    
+        </h4> -->
+    
+    
+    
+    
+            <ul class="tab-items">
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="#">
+                        <i class="fas fa-home"></i>‍ Home</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="log.html">
+                        <i class="fas fa-user"></i>‍ Login</a>
+                </li>
+                <div class="tab-indicator"></div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrapper">
+            <h1 style="color: white; font-size: 100px;">Ernakulam</h1>
+            <p style="color: white;">Ernakulam bordering the district of Thrissur in the north, Idukki in the East, Alapuzha and Kottayam in the south, Lakshadweep Sea in the west is an amalgam of a hoary heritage and global growth of industry and commerce. For the outside world, Ernakulam is part of Kochi referred to in the history of Kerala as the Queen of Arabian Sea. The densely populated Ernakulam District embodies the achievements of the Kerala State in literacy, industry, trade and commerce. With an inclusive culture, relatively high per capita income and an unstoppable interest of the people in updating themselves of the political, economic, social and cultural happenings in the national and international spheres, Ernakulam represents the high modern phase of the Kerala society.</p>
+            
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Vypeen-Island-.jpg)">
+                                  <div class="inner">
+                                      <p> Vypeen Island</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>Vypeen is one of the popular places to visit in Ernakulam in one day and certainly one of the best islands in Kerala. A short and beautiful ferry ride from the city will take to this serene island which is dotted with beaches, backwaters and an array of restaurants and hotels. A desktop worthy scenery away from the bustling environment is what makes Vypeen island one of the best places to visit in Ernakulam for lovers.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                            <div class="front" style="background-image: url(./images/Thattekkad\ Bird\ Sanctuary.jpg)">
+                                  <div class="inner">
+                                      <p>Thattekkad Bird Sanctuary</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>One of the first bird sanctuaries in Kerala and undeniably a haven for nature enthusiasts. In the words of Salim Ali (world famous ornithologist), Thattekkad is the “richest bird sanctuary in India” since it is home to hundreds of different endangered species of migratory birds. This thick deciduous forest has plantations of mahogany, teak, rosewood and rubber running through it. Make sure to bring along a pair of binoculars to get a glimpse of the birdlife</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Cherai-Beach.jpg)">
+                                  <div class="inner">
+                                      <p>Cherai Beach</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Located on the north end of Vypin island in Kochi, Cherai beach is a 15 km stretch of wild and rugged beauty. Although not overwhelmed by hotels or major restaurants, the beach is dotted with small shacks selling local snacks like pakoras and chips. Stunning lagoons, wide paddy fields and coconut grooves adorn the road to the beach. Ernakulam sightseeing is not complete without a visit to Cherai beach</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Hill-Palace-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Hill Palace
+                                        </p>
+                                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Hill Palace is a prominent Heritage museum, which exhibits countless archaeological relics and belongings of the Maharaja of Kochi. This famous palace, which was built in 1865, comprises forty-nine buildings with enchanting gardens and a children’s park. It is opened to the public from 9 AM to 12 noon and from 2 PM to 4: 30 PM. Of all the majestic Ernakulam tourist places, Hill Palace is certainly one of the top attractions</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/David\ Hall\ Art\ Gallery.jpg)">
+                                  <div class="inner">
+                                      <p>David Hall Art Gallery</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>A Dutch bungalow near the Dutch cemetery in Fort Kochi got renovated to become a major attraction for art lovers. One of the best places to visit in Ernakulam, the gallery exhibits works by prominent and local artists. Travellers will also be delighted to find a cosy garden restaurant which serves a variety of cakes and snacks; however the café is known for its fresh and crispy pizzas.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Folklore-Museum-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>Folklore Museum</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Pathiramanal, which means “Sands of the Night”, is a small lake island located on the backwaters of Alappuzha in Lake Vembanad. It is a bird watcher’s paradise since it is supposed to hold approximately 91 local species of birds and 50 species of migratory birds. The location of the island is extremely scenic, making it a lovely space to observe birds and the water</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Princess\ Street.jpg)">
+                                  <div class="inner">
+                                      <p>Princess Street</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Vasco Da Gama is believed to have lived in the building at the end of this street. The road is now lined with eateries, bookstores, cafes and small hotels. Similar to MG road, Princess Street too is a shopper’s delight. Hands down, this vibrant attraction is one of the best places to visit in Ernakulam.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Santa\ Cruz\ Basilica.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Santa Cruz Basilica</p>
+                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>It is deemed as one of the oldest cathedrals across the nation and is one of the finest architectural marvels in India. The spectacular historical painting inscribed on the walls of the building is the unique feature of this cathedral.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+        <script src="" async defer></script>
+    </body>
+</html>

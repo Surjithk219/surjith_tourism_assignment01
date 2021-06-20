@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="./css/patha.css">
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* body {
+                background: #111;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            } */
+    
+            svg {
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .tab {
+                max-width: 800%;
+                padding: 0 2em;
+                border-radius: 0.5rem;
+                background-color:#008cff;
+                line-height: 4em;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: auto;
+                transition: all 0.5s linear;
+                box-shadow: 5px 5px 20px violet;
+                height: 70px;
+                margin-top: 10px;
+                
+            }
+    
+            .tab-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-grid;
+                grid-gap: 1em;
+                transition: color 5s ease-in;
+                float: right;
+            }
+    
+            .tab-items> :nth-child(1) {
+                grid-column: 1/2;
+            }
+    
+            .tab-items> :nth-child(2) {
+                grid-column: 2/3;
+            }
+    
+            .tab-items> :nth-child(3) {
+                grid-column: 3/4;
+            }
+    
+            .tab-items> :nth-child(4) {
+                grid-column: 4/5;
+            }
+    
+            .tab-items> :nth-child(5) {
+                grid-column: 5/6;
+            }
+    
+            .tab-item {
+                display: inline;
+                grid-row: 1/2;
+            }
+    
+            .tab-item.active .item-link {
+                color: rgb(74, 167, 167);
+            }
+    
+            .item-link {
+                padding: 0 0.75em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 256ms;
+            }
+    
+            .item-link:hover {
+                color:yellow;
+                /* text-decoration: undelrine; */
+            }
+    
+            .tab-indicator {
+                height: 3px;
+                background-color: yellow;
+                border-radius: 3px 3px 0 0;
+                grid-column: var(--index)/span 1 !important;
+                grid-row: 1/2;
+                align-self: end;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="tab">
+
+
+
+        <!-- <h4>
+    <span>Alappuzha</span>
+    
+        </h4> -->
+    
+    
+    
+    
+            <ul class="tab-items">
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="#">
+                        <i class="fas fa-home"></i>‍ Home</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="log.html">
+                        <i class="fas fa-user"></i>‍ Login</a>
+                </li>
+                <div class="tab-indicator"></div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrapper">
+            <h1 style="color: white; font-size: 100px;">Pathanamthitta</h1>
+            <p style="color: white;">Pathanamthitta district is known as the 'Headquarters of Pilgrimage Tourism', of the Kerala State. Situated near the Western Ghats and bordered by the hills, Pathanamthitta district is a treat to eyes with its vast unending stretches of forests, rivers and rural landscapes. Blessed by nature, the district is famous for its scenic beauty, fairs and festivals. This website is the official page of District Tourism Promotion Council, Pathanamthitta (DTPC) where visitors can browse the destinations and learn about various activities of DTPC</p>
+            
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/konni.jpg)">
+                                  <div class="inner">
+                                      <p> konni</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>A hill town, Konni is famous for timber trade and wild elephant training centre. This is a charming town with lush meadows and hills stands on the bank of river Achakovil. It is surrounded by clove and pepper plantations. Elephants trapped from the forest area are also tamed here</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                            <div class="front" style="background-image: url(./images/sabari.jpg)">
+                                  <div class="inner">
+                                      <p>sabarimala</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Sabarimala is situated 72 km from Pathanamthitta town, 191 km from Thiruvananthapuram and 210 km from Kochi. It is the ‘Sacred Abode of Lord Ayyappa’ and one of the most important Hindu pilgrim centre in the country.The traditional route to Sabarimala is from Erumeli (40 km.)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Thriveni-Sangamam.jpg)">
+                                  <div class="inner">
+                                      <p>Thriveni Sangamam
+                                    </p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Located in the popular Vembanad Lake, this quaint island is one of the most fascinating islands in Kerala. The journey to reach the striking island is one of the most mesmerizing ones complete with sights of rare birds, swaying coconut palms, and whispering waters</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Aranmula.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Aranmula
+                                        </p>
+                                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>Aranmula, a UN heritage site, is famous for two things - the boat race and the Aranmula Parthasarathy Temple. Then, you can also buy an Aranmula Kannadi, an intricately-designed metal mirror made using a secret method that’s been passed down from over generations.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Konni-Forest-Reserve.jpg)">
+                                  <div class="inner">
+                                      <p> Konni Forest Reserve</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Konni Forest Reserve is one of the places to visit if you’re looking for some adventure. It’s difficult to reach the waterfalls as only jeeps can traverse the narrow trodden paths.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/MONROE-LIGHTHOUSE.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Achankovil River</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Located in Pallom at a distance of around 8 km from Kottayam, Monroe Lighthouse offers a magnificent view of Kottayam, including the backwaters of beautiful Vembanad. Visit this lighthouse for some splendid views of the lush green paddy fields, and do carry a camera – the sunset here is magical! You could choose from best hotels near Kottayam for a comfortable stay and make the best of your vacation in Kerala..</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Poonjar-Palace-in-Kottayam.jpg)">
+                                  <div class="inner">
+                                      <p>Poonjar Palace</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Poonjar Palace is a beautiful palace boasting of elegance and opulence of the royal kingdom that it was once upon a time. Though not very well-maintained, it impresses with its intricate wooden carvings.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/church-in-Pathanamthitta.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        St.George Orthodox Church</p>
+                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Nestled at a height of 6,000 feet above the sea level in the Western Ghats, Illikkal Kallu is one of the top Kottayam tourist places. People from all over India come to witness this natural tourist attraction as half of the rock has fallen apart and now what is left is the other half part of it which stands sturdy. </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+        <script src="" async defer></script>
+    </body>
+</html>

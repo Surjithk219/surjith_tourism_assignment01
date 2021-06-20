@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="./css/thiru.css">
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* body {
+                background: #111;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            } */
+    
+            svg {
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .tab {
+                max-width: 800%;
+                padding: 0 2em;
+                border-radius: 0.5rem;
+                background-color:#008cff;
+                line-height: 4em;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: auto;
+                transition: all 0.5s linear;
+                box-shadow: 5px 5px 20px violet;
+                height: 70px;
+                margin-top: 10px;
+                
+            }
+    
+            .tab-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-grid;
+                grid-gap: 1em;
+                transition: color 5s ease-in;
+                float: right;
+            }
+    
+            .tab-items> :nth-child(1) {
+                grid-column: 1/2;
+            }
+    
+            .tab-items> :nth-child(2) {
+                grid-column: 2/3;
+            }
+    
+            .tab-items> :nth-child(3) {
+                grid-column: 3/4;
+            }
+    
+            .tab-items> :nth-child(4) {
+                grid-column: 4/5;
+            }
+    
+            .tab-items> :nth-child(5) {
+                grid-column: 5/6;
+            }
+    
+            .tab-item {
+                display: inline;
+                grid-row: 1/2;
+            }
+    
+            .tab-item.active .item-link {
+                color: rgb(74, 167, 167);
+            }
+    
+            .item-link {
+                padding: 0 0.75em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 256ms;
+            }
+    
+            .item-link:hover {
+                color:yellow;
+                /* text-decoration: undelrine; */
+            }
+    
+            .tab-indicator {
+                height: 3px;
+                background-color: yellow;
+                border-radius: 3px 3px 0 0;
+                grid-column: var(--index)/span 1 !important;
+                grid-row: 1/2;
+                align-self: end;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="tab">
+
+
+
+        <!-- <h4>
+    <span>Alappuzha</span>
+    
+        </h4> -->
+    
+    
+    
+    
+            <ul class="tab-items">
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="#">
+                        <i class="fas fa-home"></i>‍ Home</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="log.html">
+                        <i class="fas fa-user"></i>‍ Login</a>
+                </li>
+                <div class="tab-indicator"></div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrapper">
+            <h1 style="color: white; font-size: 100px;">Thiruvananthapuram</h1>
+            <p style="color: white;">The southern tip of God’s Own Country is home to the administrative and cultural hub of the State, Thiruvananthapuram. From a landscape naturally endowed with some of the most picturesque visuals possible along with culturally relevant holy sites that have thrived for more than a thousand years, this area has something for everyone. Young and old alike, all can experience their own slice of Kerala here, tailor-made to their individual preference. Listed below are some of the most prominent places of interest in the State capital.</p>
+            
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Kuthiramalika\ \(Puthenmalika\)\ Palace\ Museum.jpg)">
+                                  <div class="inner">
+                                      <p> Kuthiramalika Palace</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>Located adjacent to Padmanabhaswamy Temple, Kuthiramalika Palace Museum is the rarest specimen of workmanship. Built by Maharaja Swathi Balarama Varma, this palace displays valuable collections of royal family.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                            <div class="front" style="background-image: url(./images/roccuk.jpg)">
+                                  <div class="inner">
+                                      <p>Vizhinjam RockCut Cave</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Situated 17km away from the city, Vizhinjam Rock Cut Cave Temple is one of the most visited tourist places in Trivandrum. This 8th century rock cut sculpture is single-celled and houses the deity of Vinandhara Dakshinamurthi</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/zoo.jpg)">
+                                  <div class="inner">
+                                      <p>Thiruvananthapuram Zoo</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Thiruvananthapuram Zoo, one of the oldest terrarium in the country which was established as a supplemental to the Napier Museum in the year 1857 by the former Maharaja of Travancore, which was originally opened for recreational purposes, the zoo becomes a conservation center of wildlife over a period of time</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Lighthouse.jpg.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Vizhinjam Lighthouse
+                                        </p>
+                                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>Vizhinjam Light House is situated on the Kurumkal hilltop, just 10 km away from Thiruvananthapuram. The lighthouse was constructed in 1925, the 36 m high masonry tower is at an elevation of 57 m from sea level. There are 144 twisting steps and a steel ladder to reach the top. From the top, one can witness the stunning views of the Arabian Sea on one side and the umbrella of coconut trees on the other.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/kovalam_lighthouse_1_516.jpg)">
+                                  <div class="inner">
+                                      <p>Kovalam</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Kovalam Beach is the treasure chest of multitude of adventure activities. Along with the sessions of para-sailing, diving and wind surfing, the beach also allows you to go on a leisure walk and offers a playful swimming time. Tourists have a choice to opt for lounge chairs to just sit and gaze at the most extraordinary sunrises and sunsets. The gleaming blue water and silver sands offers a quality time to enjoy nature at its best.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/veli.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Veli Tourist Village</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>The planned location of the Veli Tourist Village proves to be a successful picnic spot. It is situated 8 kms from the city, where Veli Lake and Arabian Sea confluences. The charming landscape allures one to explore this much sort after destination.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Ponmudi_1668.jpg)">
+                                  <div class="inner">
+                                      <p>Ponnmudi</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>The captivating hill station of Ponmudi is at a distance of 61 kms from Trivandrum. It is situated 915 meters above sea level and offers respite from the heat and hustle and bustle of other cities. Its narrow, meandering pathways, dark woods and soothing climate make it a splendid location to spend a holiday at. A multitude of colourful butterflies, springs and rapids, myriad species wild flowers and the deer park nearby are the key attraction of this fascinating hill station.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/poovar.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Poovar Island</p>
+                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>A traveller’s paradise, Poovar Island nestles between the Arabian Sea, Kerala backwaters and the majestic Western Ghats. Palm-fringed beaches, golden sands and turquoise blue seawater awaits here. This place is Kerala’s most distinctive remote getaway and a perfect place to spend quality time with nature and loved ones</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+        <script src="" async defer></script>
+    </body>
+</html>

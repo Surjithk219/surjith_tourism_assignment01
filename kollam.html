@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="./css/kollam.css">
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* body {
+                background: #111;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            } */
+    
+            svg {
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .tab {
+                max-width: 800%;
+                padding: 0 2em;
+                border-radius: 0.5rem;
+                background-color:#008cff;
+                line-height: 4em;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: auto;
+                transition: all 0.5s linear;
+                box-shadow: 5px 5px 20px violet;
+                height: 70px;
+                margin-top: 10px;
+                
+            }
+    
+            .tab-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-grid;
+                grid-gap: 1em;
+                transition: color 5s ease-in;
+                float: right;
+            }
+    
+            .tab-items> :nth-child(1) {
+                grid-column: 1/2;
+            }
+    
+            .tab-items> :nth-child(2) {
+                grid-column: 2/3;
+            }
+    
+            .tab-items> :nth-child(3) {
+                grid-column: 3/4;
+            }
+    
+            .tab-items> :nth-child(4) {
+                grid-column: 4/5;
+            }
+    
+            .tab-items> :nth-child(5) {
+                grid-column: 5/6;
+            }
+    
+            .tab-item {
+                display: inline;
+                grid-row: 1/2;
+            }
+    
+            .tab-item.active .item-link {
+                color: rgb(74, 167, 167);
+            }
+    
+            .item-link {
+                padding: 0 0.75em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 256ms;
+            }
+    
+            .item-link:hover {
+                color:yellow;
+                /* text-decoration: undelrine; */
+            }
+    
+            .tab-indicator {
+                height: 3px;
+                background-color: yellow;
+                border-radius: 3px 3px 0 0;
+                grid-column: var(--index)/span 1 !important;
+                grid-row: 1/2;
+                align-self: end;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="tab">
+
+
+
+        <!-- <h4>
+    <span>Alappuzha</span>
+    
+        </h4> -->
+    
+    
+    
+    
+            <ul class="tab-items">
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="#">
+                        <i class="fas fa-home"></i>‍ Home</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="log.html">
+                        <i class="fas fa-user"></i>‍ Login</a>
+                </li>
+                <div class="tab-indicator"></div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrapper">
+            <h1 style="color:black; font-size: 100px;">Kollam</h1>
+            <p style="color: black;">Kollam is a city in the state of Kerala, on India's Malabar Coast. It’s known as a trade hub and for its beaches, like lively Kollam and secluded Thirumullavaram. Sardar Vallabhbhai Patel Police Museum has artifacts tracing the history of the police force. Nearby, Ashtamudi Lake is a gateway to the Kerala backwaters, a network of waterways rich with vegetation. The striped 1902 Tangasseri Lighthouse has ocean views. .</p>
+            
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/paruvi.jpg)">
+                                  <div class="inner">
+                                      <p> Palaruvi Waterfallsy</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>The sanctuary, flanked on 3 sides by the tranquil waters of Idukki Lake, is housed amidst picturesque settings of tropical evergreen & semi-evergreen forests, meadows, and deciduous trees.The Wildlife Sanctuary, one of the places to visit in Idukki, houses hordes of wild elephants</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                            <div class="front" style="background-image: url(./images/Ashtamudi-Lake-kollam-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>Ashtamudi Lake</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>The Idukki dam is constructed across the Periyar River, in a valley between the Kuravan and Kurathi hills in Kerala. The awe-inspiring, majestic dam, which stands at 167.68 meters (550 ft), is one of the highest arch dams in Asia. The dam, which is one of the Idukki tourist places, constructed by the Kerala government in 1975 and supports 780 MW hydroelectric power station that draws electricity from this dam</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Mayyanad-kollam-kb6592.jpeg)">
+                                  <div class="inner">
+                                      <p>Mayyanad
+                                    </p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>The cascading waters from a height of 1500 meters amidst the hills enveloped in lush greenery, adorns the skies with rainbows that takes the visitors’ breath away. A favorable hunting ground for photographers, the Keezharkuthu falls also referred to as rainbow falls immerse the visitors in an inexplicable experience.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Jatayu’s-Earth-Centre-kollam-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Jatayu’s Earth Centre
+                                        </p>
+                                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>For the best of Kollam sightseeing , this is a very recent construction, the Jatayu Nature Park is a rock-themed park. The adventure park has 6D theatre an audio-visual digital room, cable car and much more. This is built to promote mythology and adventure tourism. This giant bird statue located on a hill top is certainly unique and something that shouldn’t be missed.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Rameshwara-Temple-kollam-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>Rameshwara Temple</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>An ancient temple in Kollam, this temple dates back to the 12th Century. It is believed to be built in the Pandian style of architecture. Dedicated to Lord Shiva, one fascinating feature of this temple is the sculpture of Vyala, the mythological monster. This is probably one of the best tourist spots in Kollam!</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Karunagappally-kb6592-kollam.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Karunagappally</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Nadukani, one of the Idukki tourist places, is situated between Thodupuzha and Idukki in the vicinity of Kulamavu. Nadukani Pavilion, a 2-storey building constructed and managed by the State Electricity Board, atop a hill is encompassed by the vast stretches of hayfields flanked by gargantuan rocks.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Thirumullavaram-Beach-kollam-kb6592.jpg)">
+                                  <div class="inner">
+                                      <p>Thirumullavaram Beach</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>A scenic and popular beach located in the city of Kollam, this beach is famous for the yearly ritual of Karkidaka Vavubali. This beach is located at a distance of 6 km from Kollam. Thirumullavaram Beach is also among the twin beaches in the Cashew capital of the world. This is a great place for Kollam sightseeing.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Kollam_Kerala.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Kollam Beach</p>
+                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Destination weddings are in trend these days, and Kollam Beach is one of those places in Kerala. In fact, it is regarded as the first beach wedding destination in Kerala. There are a lot of places to visit in Kollam Kerala, but this beach is one of the most scenic and beautiful. The beach also has a lighthouse called the Tangasseri Lighthouse, which is a major landmark here at Kollam beach.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+        <script src="" async defer></script>
+    </body>
+</html>

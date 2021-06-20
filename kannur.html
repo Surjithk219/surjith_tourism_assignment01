@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="./css/alpy.css">
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* body {
+                background: #111;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            } */
+    
+            svg {
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .tab {
+                max-width: 800%;
+                padding: 0 2em;
+                border-radius: 0.5rem;
+                background-color:#008cff;
+                line-height: 4em;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: auto;
+                transition: all 0.5s linear;
+                box-shadow: 5px 5px 20px violet;
+                height: 70px;
+                
+            }
+    
+            .tab-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-grid;
+                grid-gap: 1em;
+                transition: color 5s ease-in;
+                float: right;
+            }
+    
+            .tab-items> :nth-child(1) {
+                grid-column: 1/2;
+            }
+    
+            .tab-items> :nth-child(2) {
+                grid-column: 2/3;
+            }
+    
+            .tab-items> :nth-child(3) {
+                grid-column: 3/4;
+            }
+    
+            .tab-items> :nth-child(4) {
+                grid-column: 4/5;
+            }
+    
+            .tab-items> :nth-child(5) {
+                grid-column: 5/6;
+            }
+    
+            .tab-item {
+                display: inline;
+                grid-row: 1/2;
+            }
+    
+            .tab-item.active .item-link {
+                color: rgb(74, 167, 167);
+            }
+    
+            .item-link {
+                padding: 0 0.75em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 256ms;
+            }
+    
+            .item-link:hover {
+                color:yellow;
+                /* text-decoration: undelrine; */
+            }
+    
+            .tab-indicator {
+                height: 3px;
+                background-color: yellow;
+                border-radius: 3px 3px 0 0;
+                grid-column: var(--index)/span 1 !important;
+                grid-row: 1/2;
+                align-self: end;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="tab">
+
+
+
+        <!-- <h4>
+    <span>Alappuzha</span>
+    
+        </h4> -->
+    
+    
+    
+    
+            <ul class="tab-items">
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="#">
+                        <i class="fas fa-home"></i>‍ Home</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+                </li>
+                <li class="tab-item">
+                    <a class="item-link" onclick="select(this)" href="log.html">
+                        <i class="fas fa-user"></i>‍ Login</a>
+                </li>
+                <div class="tab-indicator"></div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrapper">
+            <h1 style="color: white; font-size: 100px;">Kannur</h1>
+            <p style="color: white;">Kannur is northernmost districts of Kerala blessed with full of greenary and historious places. Kannur is famous for Politics and Temple festivals. Towards the north of Kozhikod and Wayanad districts lies the district of Kannur. The region is famous for the dazzling ritual performance called Theyyam.</p>
+            
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/anh.jpg)">
+                                  <div class="inner">
+                                      <p>St. Angelo Fort</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>One of the best places to visit in Alleppey is Kuttanad Backwaters. This isn’t a place, it’s a phenomenon. It is a spectacular lagoon, surrounded by the beauty of lakes, rivers, canals, misty mountains and ethereal landscapes.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                            <div class="front" style="background-image: url(./images/muzha.jpg)">
+                                  <div class="inner">
+                                      <p>Muzhappilangad Beach</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>It is one of the most popular museums in Alleppey. Built-in the 18th century by the king of Travancore, Anizham Thirunal Marthanda Varma, Krishnapuram Palace is quite popular for its vintage architecture and artistic murals</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/palakkayam_thattu_paradise_found20190831101025_941_1.jpg.jpg)">
+                                  <div class="inner">
+                                      <p>Palakkayam Thattu</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Famous as the Alappuzha lighthouse,  the Alleppey lighthouse can be spotted from miles away. A humongous tower celebrating the solitude by the coastal strip wearing strips of red and white is how it is best reminisced</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/kannurlighy.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Kannur Lighthouse
+                                        </p>
+                                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Glistening sands, crystal clear water, beautiful waves, enchanting sunrise, and sunset is what makes the Alappuzha or the Alleppey beach one of the best places to visit in Alleppey. This stunningly beautiful beach is known for its vast, endless stretches, thereby proving as a getaway for couples as well as families</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/vismaya.jpg)">
+                                  <div class="inner">
+                                      <p>Vismaya Water Park</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Pandavan Rock is an amalgamation of breathtaking caves and glorious rock carvings. The natural beauty surrounding this site is bliss. It is said that the Pandavas stayed inside the cave during Mahabharata.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/Payyambalam_Beach_140.jpg.jpg)">
+                                  <div class="inner">
+                                      <p>Payyambalam Beachl</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Pathiramanal, which means “Sands of the Night”, is a small lake island located on the backwaters of Alappuzha in Lake Vembanad. It is a bird watcher’s paradise since it is supposed to hold approximately 91 local species of birds and 50 species of migratory birds. The location of the island is extremely scenic, making it a lovely space to observe birds and the water</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/ezhi.jpg)">
+                                  <div class="inner">
+                                      <p>Ezhimala</p>
+                                      <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>Champakulam is a captivating rural set up on the banks of Pampa River in Alappuzha district, with lush greens paddy fields and coconut trees forming a perfect picturesque, lying amidst the rice bowl of Kerala. Champakulam Moolam Boat Race is the oldest tradition and a must to view in Kerala</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="container">
+                              <div class="front" style="background-image: url(./images/tely.jpg)">
+                                  <div class="inner">
+                                      <p>
+                                        Tellicherry Fort</p>
+                        <span>explore</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                      <p>This place is highly recommended for food lovers. The ambiance, cuisine, location and service, everything is quite laudable in this restaurant. This beautifully maintained restaurant promises well-prepared India, Chinese and Continental cuisines.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body {
+            background: #111;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        } */
+
+        svg {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .tab {
+            max-width: 800%;
+            padding: 0 2em;
+            border-radius: 0.5rem;
+            background-color:#008cff;
+            line-height: 4em;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: auto;
+            transition: all 0.5s linear;
+            box-shadow: 5px 5px 20px violet;
+            
+        }
+
+        .tab-items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-grid;
+            grid-gap: 1em;
+            transition: color 5s ease-in;
+            float: right;
+        }
+
+        .tab-items> :nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        .tab-items> :nth-child(2) {
+            grid-column: 2/3;
+        }
+
+        .tab-items> :nth-child(3) {
+            grid-column: 3/4;
+        }
+
+        .tab-items> :nth-child(4) {
+            grid-column: 4/5;
+        }
+
+        .tab-items> :nth-child(5) {
+            grid-column: 5/6;
+        }
+
+        .tab-item {
+            display: inline;
+            grid-row: 1/2;
+        }
+
+        .tab-item.active .item-link {
+            color: rgb(74, 167, 167);
+        }
+
+        .item-link {
+            padding: 0 0.75em;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: color 256ms;
+        }
+
+        .item-link:hover {
+            color:yellow;
+            /* text-decoration: undelrine; */
+        }
+
+        .tab-indicator {
+            height: 3px;
+            background-color: yellow;
+            border-radius: 3px 3px 0 0;
+            grid-column: var(--index)/span 1 !important;
+            grid-row: 1/2;
+            align-self: end;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="tab">
+
+
+
+    <h4>
+<span>KERALA</span>
+<span>TOURISM</span>
+<span>DEVELOPMENT</span>
+    </h4>
+
+
+
+
+        <ul class="tab-items">
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="#">
+                    <i class="fas fa-home"></i>‍ Home</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="about.html"> About</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="dist.html"> District</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="sign.html">Sign Up</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="log.html">
+                    <i class="fas fa-user"></i>‍ Login</a>
+            </li>
+            <div class="tab-indicator"></div>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dd8c49730d.js"></script>
+
+
+
+
+
+    <h1>Top Destinations in Kerala</h1>
+    <br>
+    <div class="sb">
+    <h3>Kerala is renowned for some of its unique cultural and geographical  characteristics. The practices and traditions handed down from generation to generation, alongside some of the natural wonders that we have been blessed with have attracted people to this land for centuries. From the ancient healthcare system ofAyurveda to our picturesque hill stations and diverse wildlife, we provide you with links to access a wide range of our specialities. We believe it is our duty to share these gifts with the rest of the world.  These specialities of God’s Own Country that are linked below shall be useful in narrowing the search and guiding you to your preferred destination along with providing the requisite information</h3>
+</div>
+    <br></div>
+    <div class="col-lg-12">
+    <div class="blog" >
+    <div class="pbox">
+    <h3>Munnar</h3>
+    <p>Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam National Park, a habitat for the endangered mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls </p>
+    
+    </div>
+    <div class="pbox">
+        <h3>Alappuzha</h3>
+        <p>There is the whole of Kerala in one side, and then there is this heavenly tourist destination called Alappuzha or Alleppey! Esteemed as the ‘Backwater Capital of India’ or the ‘Venice of the East’, Alleppey is known for its silent backwaters and bountiful beauty!
+
+        </p>
+        
+        </div>
+    
+        <div class="pbox">
+            <h3>Wayanad</h3>
+            <p>Cradled in the lap of the Western Ghats, Wayanad truly deserves a top rank in the list of places to visit in Kerala. Situated at an astounding height of 700-2,100m, this stunning hill station is all about fantasy, untouched nature, unforgettable moments, and merriment!</p>
+            
+            </div>
+            <div class="pbox">
+                <h3>Kovalam</h3>
+                <p>If you are a beach goer, and is still assuming none can beat the charm and allurement of Goa or other popular beach destinations, you must visit Kovalam today! Located along the coastlines of the charismatic Arabian Sea, this beach town is undoubtedly one of the best tourist attractions to visit in Kerala.</p>
+                
+                </div>
+
+                
+                
+    </div>
+    </div>
+    
+    
+</div>
+<div class="new">
+<div class="pbox">
+    <h3>Thekkedy</h3>
+    <p>Considering that you want more from your Kerala holidays, you should not miss a trip to Thekkady, the evergreen abode of God’s Own Country! Strategically located and well-connected with some of the major Kerala holiday destinations, this is the place that always wears the green colour of Mother Nature!
+
+        The ‘Spice Capital of Kerala’, Thekkady is much popular as the natural abode to numerous exotic wildlife species. And while talking about wildlife species, the Periyar National Park in Thekkady will surely behold all your senses with its fascinating range of dwellers!</p>
+    
+    </div>
+    <div class="pbox">
+        <h3>Vagamon</h3>
+        <p>If you are looking for an offbeat, yet captivating holiday experience in Kerala, you must plan your vacation in Vagamon. One of the most scenic hill stations and least explored tourist places in Kerala, this retreat in the Idukki district is known for its salubrious beauty, pleasant climate, and much more.
+
+            In addition to leisure travellers, thrill and adventure seekers also make it to Vagamon in a considerable number. A year-round destination, it is considered as an ideal destination for adventure activities like paragliding, mountaineering, rock climbing, trekking, and lot more.</p>
+        
+        </div>
+    </div>
+
+    <!-- carosel start -->
+
+    
+    
+    <!-- <p>Kerala, a state situated on the tropical Malabar Coast of southwestern India, is one of the most popular tourist destinations in the country. Named as one of the ten paradises of the world by National Geographic Traveler, Kerala is famous especially for its ecotourism initiatives and beautiful backwaters.</p> -->
+    <!-- carosel end -->
+   
+</body>
+
+</html>

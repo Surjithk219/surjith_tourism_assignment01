@@ -1,0 +1,60 @@
+body{
+    background-image: url('../images/theyyam_2_478.jpg');
+    background-size: cover;
+}
+.tab h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    color:white;
+    padding-top: 2%;
+    /* background: url('../images/theyyam_2_478.jpg');
+     */
+
+}
+
+  h1{
+      margin: 10px;
+      color:oldlace;
+      font-size: 40px;
+  }
+  .blog{
+    /* border: 2px solid white; */
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 70%;
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    
+    
+}
+.pbox{
+    border: 3px solid white;
+    margin:2%;
+    text-align: justify;
+    height: 300px;
+    width: 600px;
+    
+  
+}
+.pbox h3{
+    text-align: center;
+    color: white;
+    padding: 1%;
+    font-size: 40;
+}
+.pbox p{
+    text-align: center;
+    color: black;
+}
+.sb h3{
+    margin: 1%;
+    font-size: 500;
+    color:white;
+}
+.new{
+    display: flex;
+}
+  
