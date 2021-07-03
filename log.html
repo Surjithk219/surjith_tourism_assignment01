@@ -24,6 +24,7 @@
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">Log In</h4>
 											<div class="form-group">
+											<form action="index.html" onsubmit="return email() && pass()">
                                                 <input type="email" name="logemail" 
                                                 class="form-style" 
                                                 placeholder="Your Email" 
@@ -38,13 +39,15 @@
                                                 id="logpass" autocomplete="none">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
+											<input type="submit" class="btn mt-4" id="submit" value="Login">
+											
                             				<p class="mb-0 mt-4 text-center">
                                                 <a href="#0" class="link">Forgot your password?</a>
                                             </p>
                                             <a href="index.html" class="btn4">Home</a>
                                             <a href="sign.html" class="btn4">Sign Up</a>
-                            				
+										   </form>
+										   <script src="js/login.js"></script>
 				      					</div>
 			      					</div>
 			      				</div>
